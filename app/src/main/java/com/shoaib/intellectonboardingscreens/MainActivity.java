@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // todo: active this button.
-                Snackbar.make(v,"Button Not Working", Snackbar.LENGTH_LONG).show();
+                Snackbar.make(v, "Button Not Working", Snackbar.LENGTH_LONG).show();
             }
         });
     }
