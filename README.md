@@ -1,3 +1,3 @@
 # Intellect-onBoardingScreen
 
-<Img src="app/src/main/res/drawable/thumbnail.png" height ="500">
+<Img src="app/src/main/res/drawable/thumbnail.png">
