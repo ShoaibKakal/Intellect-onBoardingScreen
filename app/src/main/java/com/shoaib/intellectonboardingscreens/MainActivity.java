@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
 import com.shoaib.intellectonboardingscreens.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // todo: active this button.
-
+                Snackbar.make(v,"Button Not Working", Snackbar.LENGTH_LONG).show();
             }
         });
     }
@@ -77,9 +79,9 @@ public class MainActivity extends AppCompatActivity {
         int childCount = activityMainBinding.layoutIndicators.getChildCount();
         for (int i = 0; i < childCount; i++) {
             ImageView imageView = (ImageView) activityMainBinding.layoutIndicators.getChildAt(i);
-            if (i == position){
+            if (i == position) {
                 imageView.setImageResource(R.drawable.background_slider_indicator_active);
-            }else{
+            } else {
                 imageView.setImageResource(R.drawable.background_slider_indicator_inactive);
             }
         }
